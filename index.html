@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="simplejs.js"></script>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Appjs</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+    function show() {
+      var d = dom_id("demo");
+
+      if (d.style.display === "none") {
+        d.style.display = "block";
+      } else {
+        d.style.display = "none";
+      }
+    }
+    
+    function Copy() {
+     var a = dom_id("install").value;
+     var b = copy_text(a);
+     
+    if(b) {
+     flash("Copied")
+     } else {
+     
+   }
+ }
+  </script>
+  <style>
+    #demo {
+      display: none; /* Hide the element by default */
+    }
+    card{
+    background: black;
+    height: ;
+    margin-right: 200px;
+    box-shadow:0 0 4px rgba(0,0,0,0.2);
+    padding: 20px;
+    background: black;
+    border: none;
+    }
+    img{
+    box-shadow:0 0 4px rgba(0,0,0,0.2);
+    }
+    a{
+    color: #1979e6;
+    padding: 5px;
+    }
+    body{
+    background: ;
+    }
+    p{
+    color: #1979e6;
+    
+    }
+    input{
+    background: black;
+    color: #1979e6;
+    height: 40px;
+    }
+ 
+    
+    
+  </style>
+</head>
+<body>
+
+<button onclick="show()">docs</button>
+<card id="demo">
+<center>
+  <a href="">docs</a>
+  <a href="">About</a>
+  <a href="">Tutorial</a>
+  <a href="">Contact</a>
+</center>
+</card>
+
+<div id="dv">
+<img src="simple.jpg">
+</div>
+<center>
+<p>Just Copy The link and past in your header</p>
+<div><input value="https://cdn.jsdelivr.net/gh/Cyber-crackers/appjs@main/appjs.js" id="install" readonly></div>
+<button onclick="Copy()">Copy</button>
+</center>
+</body>
+</html>
+
+
+
+</body>
+</html>
